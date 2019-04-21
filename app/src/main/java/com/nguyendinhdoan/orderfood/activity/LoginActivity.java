@@ -23,7 +23,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.nguyendinhdoan.orderfood.CommonUtils;
+import com.nguyendinhdoan.orderfood.utils.CommonUtils;
 import com.nguyendinhdoan.orderfood.R;
 import com.nguyendinhdoan.orderfood.model.User;
 

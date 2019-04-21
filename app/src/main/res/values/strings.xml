@@ -16,4 +16,6 @@
     <string name="wrong_password">wrong password</string>
     <string name="login_success">login successful</string>
     <string name="error_occur">error occur</string>
+    <string name="hint_name">name</string>
+    <string name="test_name_text">aaaa</string>
 </resources>

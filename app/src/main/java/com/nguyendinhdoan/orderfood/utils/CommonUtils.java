@@ -1,4 +1,4 @@
-package com.nguyendinhdoan.orderfood;
+package com.nguyendinhdoan.orderfood.utils;
 
 import android.app.Activity;
 import android.content.Context;
