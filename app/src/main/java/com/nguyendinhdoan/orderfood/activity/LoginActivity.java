@@ -158,7 +158,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     public void onCancelled(@NonNull DatabaseError error) {
                         Log.e(TAG, "error: " + error.getMessage());
                         progressBar.setVisibility(View.INVISIBLE);
-                        Snackbar.make(loginRootLayout, getString(R.string.error_occur),
+                        Snackbar.make(loginRootLayout, error.getMessage(),
                                 Snackbar.LENGTH_LONG).show();
                     }
                 }
