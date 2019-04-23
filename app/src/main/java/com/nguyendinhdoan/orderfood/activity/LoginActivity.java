@@ -31,6 +31,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     public static final String TAG = "LOGIN_ACTIVITY";
     public static final String USER_TABLE_NAME = "users";
+    public static final String USER_NAME_KEY = "USER_NAME_KEY";
 
     private ConstraintLayout loginRootLayout;
     private Button loginButton;
@@ -141,8 +142,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
                             // validate password
                             if (user != null && password.equals(user.getPassword())) {
-                                Snackbar.make(loginRootLayout, getString(R.string.login_success),
-                                        Snackbar.LENGTH_LONG).show();
+                                launchHomeScreen(user.getName());
                             } else {
                                 Snackbar.make(loginRootLayout, getString(R.string.wrong_password),
                                         Snackbar.LENGTH_LONG).show();
@@ -164,6 +164,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 }
         );
 
+    }
+
+    private void launchHomeScreen(String name) {
+        Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+        intent.putExtra(USER_NAME_KEY, name);
+        startActivity(intent);
+        finish();
     }
 
 }
