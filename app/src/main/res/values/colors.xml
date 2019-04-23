@@ -5,4 +5,5 @@
     <color name="colorAccent">#D81B60</color>
 
     <color name="colorOverlay">#7f333639</color>
+    <color name="colorMenuName">#4f0e0d0e</color>
 </resources>
